@@ -1,0 +1,144 @@
+header{
+    padding-left: 100px;
+    padding-top: 40px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    transition: 0.4s;
+    height: 20px;
+}
+#menuIcon{
+    cursor: pointer;
+}
+.headerLogo_container{
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.headerName{
+    margin: auto;
+}
+header.sticky{
+    padding: 20px 100px;
+    background: var(--main-brand-color);
+}
+.circle{
+    height: 600px;
+    width: 600px;
+
+    max-height: 60vw;
+    max-width: 60vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.circle img{
+    width: 100%;
+}
+nav{
+    margin-bottom: 50px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav .headerLink{
+    color: var(--secondary-text-color);
+    text-decoration: none;
+    position: relative;
+    padding: 3px;
+}
+nav .headerLink:hover{
+    color: var(--text-color);
+}
+nav .headerLink::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: var(--main-brand-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 150ms ease-in-out;
+}
+nav .headerLink:hover::after{
+    width: 100%;
+}
+#toggle_button{
+    display: none;
+}
+label[for="toggle_button"]{
+    display: none;
+}
+label[for="toggle_button"] span{
+    font-size: 40px;
+}
+
+@media(max-width: 1250px){
+    .headerLogo_container{
+        display: block;
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+    .headerName{
+        padding-top: 120px;
+        margin: auto;
+        text-align: center;
+    }
+    .circle{
+        height: 600px;
+        width: 600px;
+    
+        max-height: 80vw;
+        max-width: 80vw;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width: 1000px){
+    header.sticky{
+        padding: 0px;
+        background: none;
+    }
+    .headerName{
+        padding-top: 20px;
+    }
+    nav{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: var(--secondary-color);
+        padding: 15px;
+        border-radius: 0 0 25px 0;
+    }
+    nav ul{
+        display: none;
+        flex-direction: column;
+    }
+    #toggle_button:checked ~ ul{
+        display: flex;
+    }
+    label[for="toggle_button"]{
+        display: block;
+    }
+    .circle{
+        height: 600px;
+        width: 600px;
+    
+        max-height: 80vw;
+        max-width: 80vw;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statera</title>
+    <link rel="icon" type="image/x-icon=" href="images/statera_logo.svg">
+    <link rel="stylesheet" href="general_settings.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="about_us.css">
+    <link rel="stylesheet" href="shows.css">
+    <link rel="stylesheet" href="stand.css">
+    <link rel="stylesheet" href="workshop.css">
+    <link rel="stylesheet" href="training.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            const header = document.querySelector("header");
+            if(document.documentElement.scrollTop > 20){
+                header.classList.add("sticky");
+            }else{
+                header.classList.remove("sticky");
+            }
+        })
+    </script>
+
+</head>
+<body>
+<!-- Header -->
+    <header>
+        <div>
+            <nav>
+                <input type="checkbox" id="toggle_button">
+                <label id="navIcon" for="toggle_button">
+                    <span id="menuIcon"> <img src="images/menu_icon.png" ></span>
+                </label>
+                <ul class="header_nav">
+                    <li><a class="headerLink" href="#about_us_section">über uns</a></li>
+                    <li><a class="headerLink"href="#shows_section">Shows</a></li>
+                    <li><a class="headerLink"href="#stand_section">Stand</a></li>
+                    <li><a class="headerLink"href="#workshops_section">Workshops</a></li>
+                    <li><a class="headerLink"href="#training_section">Training</a></li>
+                    <li><a class="headerLink"href="#contact_section">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+ <!-- Logo at Header -->   
+    <section id="headerLogo">
+        <div class="headerLogo_container">
+            <div class="headerName">
+                <h1>STATERA</h1>
+                <p class="subheading">Die Star Wars Showgruppe aus dem Allgäu</p>
+            </div>
+            <div class="circle">
+                <img src="images/statera_logo.svg" alt="">
+            </div>
+        </div>
+    </section>
+<!-- About us -->
+    <section id="about_us_section">
+        <div class="about_us_container">
+            <h2>Über Uns</h2>
+            <p>Statera ist eine Star Wars Showkampfgruppe, die seit 2015 mit großer Leidenschaft existiert. Unsere Expertise liegt im Bereich des Lichtschwertkampfes, wobei wir uns gleichzeitig intensiv um das Design und die Gestaltung beeindruckender Kostüme kümmern.</p>
+        </div>
+    </section>
+
+<!-- shows -->
+    <section id="shows_section">
+        <div class="shows_container">
+            <h2>Shows</h2>
+            <p>Hier zu sehen ist unsere Show die wir bei der Loricon 2019 aufgeführt haben.</p>
+            <div id="videoContainer">
+                <video src="video/Loricon_2019.mp4" width=720 controls poster="images/video_titelbild.jpg">
+                    Dies Video kann in deinem Browser nicht wiedergegeben werden.<br>
+                    Eine Download-Version steht unter <a href="video/Loricon_2019.mp4">Link-Addresse</a> zum Abruf bereit. 
+                    </video>
+            </div>
+        </div>
+    </section>
+
+<!-- stand -->
+    <section id="stand_section">
+        <div class="stand_container">
+            <h2>Convention-Stand</h2>
+            <p>Der Statera Convention-Stand präsentiert eine Fülle an facettenreichen Informationen zu einer Vielzahl von Star Wars-Themen – von Lichtschwertern über Jedi- und Sith-Uniformen bis hin zu selbstgebauten Droiden. Tauche ein in die faszinierende Welt von Star Wars und entdecke auf unserem Stand nicht nur die ikonischen Waffen und Gewänder der Jedi und Sith, sondern auch die Kreativität hinter selbstgefertigten Droiden. Wir bieten eine umfassende Palette an Informationen, die Fans und Interessierte gleichermaßen begeistern wird.</p>
+            <div class="flex_container">
+                <div class="standCard">
+                    <img class="stand_img" src="images/stand_1.JPG" alt="">
+                </div>
+                <div class="standCard">
+                    <img class="stand_img" src="images/stand_2.JPG" alt="">
+                </div>
+                <div class="standCard">
+                    <img class="stand_img" src="images/stand_3.JPG" alt="">
+                </div>
+                <div class="standCard">
+                    <img class="stand_img" src="images/stand_4.JPG" alt="">
+                </div>
+                <div class="standCard">
+                    <img class="stand_img" src="images/stand_5.JPG" alt="">
+                </div>
+                <div class="standCard">
+                    <img class="stand_img" src="images/stand_6.JPG" alt="">
+                </div>
+                
+            </div>
+        </div>
+        
+    </section>
+
+<!-- workshop -->
+<section id="workshops_section">
+    <div class="workshops_container">
+        <h2>Workshops</h2>
+        <p>Auf Conventions sind wir nicht nur mit unserem Infostand präsent, sondern bringen zusätzlich eine Extraportion Action mit verschiedenen Workshops und spannenden Informations-Panels ein. Unser Ziel ist es, den Besuchern nicht nur am Stand wertvolle Informationen zu bieten, sondern auch durch interaktive Workshops. </p>
+        <div class="flex_container">
+            <div class="workshopCard">
+                <img class="workshops_img" src="images/workshop_1.jpg" alt="">
+            </div>
+            <div class="workshopCard">
+                <img class="workshops_img" src="images/workshop_2.JPG" alt="">
+            </div>
+            <div class="workshopCard">
+                <img class="workshops_img" src="images/workshop_3.JPG" alt="">
+            </div>
+            <div class="workshopCard">
+                <img class="workshops_img" src="images/workshop_4.JPG" alt="">
+            </div>
+            <div class="workshopCard">
+                <img class="workshops_img" src="images/workshop_5.JPG" alt="">
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<!-- training -->
+    <section id="training_section">
+        <div class="training_container">
+            <h2>Training</h2>
+            <p>Jeden Monat veranstalten wir ein cooles offenes Training, zu dem wirklich alle herzlich eingeladen sind! Den genauen Termin plaudern wir immer rechtzeitig auf unserem Discord-Server aus, damit jeder, der Bock hat, dabei sein kann.</p>
+            <div class="flex_container">
+                <div class="trainingCard">
+                    <img class="training_img" src="images/training_1.jpg" alt="">
+                </div>
+                <div class="trainingCard">
+                    <img class="training_img" src="images/training_2.JPG" alt="">
+                </div>
+                <div class="trainingCard">
+                    <img class="wtraining_img" src="images/training_3.JPG" alt="">
+                </div>
+                <div class="trainingCard">
+                    <img class="training_img" src="images/training_4.JPG" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- contact -->    
+    <footer id="contact_section">
+        <h2>Mehr Informationen</h2>
+        <div class="grid_container">
+            <div id="item0" class="grid_item">
+            </div>
+            <div id="item1" class="grid_item">
+                <a class="footerLink" href="https://www.instagram.com/statera_allgaeu/" target="_blank"><img src="images/instagram.png"></a>
+                <div>
+                    <a class="footerLink" href="https://www.instagram.com/statera_allgaeu/" target="_blank"><h3>Instagram</h3></a>
+                </div>
+            </div>
+            <div id="item2" class="grid_item">
+                <a class="footerLink" href="https://www.facebook.com/StateraAllgaeu" target="_blank"><img src="images/facebook.png"></a>
+                <a class="footerLink" href="https://www.facebook.com/StateraAllgaeu" target="_blank"><h3>Facebook</h3></a>
+            </div>
+            <div id="item3" class="grid_item">
+                <h3>Kontakt</h3>
+                <p>Habt ihr fragen zu unserer Gruppe oder möchtet uns auf eurer Veranstaltung haben, schreibt uns einfach auf Social Media an.</p>
+            </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

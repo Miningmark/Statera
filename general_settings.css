@@ -1,0 +1,66 @@
+@font-face{
+    font-family:'poppins';
+    font-weight: 100;
+    src: url(fonts/poppins-regular-webfont.woff2) format(woff2),
+         url(fonts/poppins-regular-webfont.woff) format(woff);
+}
+@font-face{
+    font-family:'poppinsB';
+    font-weight: 400;
+    src: url(fonts/poppins-bold-webfont.woff2) format(woff2),
+         url(fonts/poppins-bold-webfont.woff) format(woff);
+}
+
+:root{
+    --main-brand-color: #297AE3;
+    --primary-color: #15171C;
+    --secondary-color: #232933;
+    --light-secondary-color: #2E3744;
+    --text-color: white;
+    --secondary-text-color: #B3B4B6;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    background-color: var(--primary-color);
+    font-family: 'poppins', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    color: var(--text-color);
+}
+h1{
+    font-size: 140px;
+    line-height: 115%;
+    font-family: 'poppinsB', sans-serif;
+    font-weight: 400;
+}
+h2{
+    font-size: 80px;
+    font-family: 'poppinsB', sans-serif;
+    font-weight: 400;
+}
+h3{
+    font-size: 38px;
+}
+.subheading{
+    margin-top: 25px;
+    color: var(--secondary-text-color);
+}
+@media(max-width: 1000px){
+    h1{
+        font-size: 12vw;
+        text-align: center;
+    }
+    .subheading{
+        text-align: center;
+    }
+    body{
+        font-size: 16px;
+    }
+}

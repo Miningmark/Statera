@@ -1,0 +1,52 @@
+#workshops_section{
+    padding: 100px 0;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    flex-wrap: wrap-reverse;
+}
+.workshops_container{
+    width: 1200px;
+    max-width: 90%;
+}
+.workshops_img{
+    width: 350px;
+}
+.workshops_container p{
+    text-align: justify;
+    line-height: 175%;
+}
+.flex_container{
+    margin-top: 50px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.workshopCard{
+    width: 350px;
+    height: 350px;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 10px 10px;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.card *{
+    text-align: center;
+}
+@media(max-width: 800px){
+    #stand_section{
+        padding: 50px 0;
+    }
+    #stand_section h2{
+        text-align: center;
+        font-size: 12vw;
+    }
+}
