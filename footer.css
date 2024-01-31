@@ -11,12 +11,12 @@ footer h2{
     width: 1500px;
     max-width: 90%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 300px 300px;
-    gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
     grid-template-areas: 
-    "item1 item1 item2"
-    "item3 item3 item0";
+        "item1 item1 item2 item2"
+        "item3 item3 item3 item3";
+    gap: 15px;
 }
 .grid_item{
     background-color: var(--light-secondary-color);
@@ -39,8 +39,6 @@ footer h2{
 }
 #item2{
     grid-area: item2;
-    flex-direction: column;
-    gap: 10px;
 }
 #item3{
     grid-area: item3;
@@ -59,23 +57,14 @@ footer h2{
     background-color: transparent;
     text-decoration: none;
 }
-@media(max-width: 1300px){
-    .grid_container{
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 300px 300px;
-        grid-template-areas: 
-        "item1 item1 item2"
-        "item3 item3 item3";
-    }
-}
 @media(max-width: 1000px){
     .grid_container{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto auto;
         grid-template-areas: 
         "item1 item1"
-        "item3 item3"
-        "item2 item0";
+        "item2 item2"
+        "item3 item3";
     }
     .grid_item img{
         height: 100px;
@@ -86,17 +75,16 @@ footer h2{
     footer h2{
         font-size: 9vw;
     }
-    #item1{
-        flex-direction: column;
-    }
     .grid_item{
         padding: 20px;
     }
     .grid_item img{
-        height: 100px;
-        width: 100px;
+        width: 25vw;
+        height: 25vw;
+        max-height: 100px;
+        max-width: 100px;
     }
     .grid_item h3{
-        font-size: 24px;
+        font-size: 6vw;
     }
 }

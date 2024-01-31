@@ -20,6 +20,9 @@
     justify-content: center;
     padding-top: 30px;
 }
+.video{
+    max-width: 90vw; 
+}
 @media(max-width: 800px){
     #shows_section{
         padding: 50px 0;
