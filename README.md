@@ -1,2 +1,4 @@
+# The Statera Website 
+
 This is one of my first websites with a responsive design that is optimized for various browser widths as well as smartphones.
-Additionally, the website also features a sticky menu.
+Additionally, the website also features a sticky menu and some pictures and a video.
